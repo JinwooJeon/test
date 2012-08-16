@@ -1,4 +1,4 @@
- 
+
 var MAXINFOLIST=50; //승인 대기 list 최대 50개
 var infoList = new Array(MAXINFOLIST);
 for(var i=0; i<MAXINFOLIST; i++) infoList[i] = new Array(3); // [n][0]=shopname, [n][1]=shopphone, [n][2]=shopid, 
@@ -23,7 +23,7 @@ function login(code) {
 	myReq.onreadystatechange = getLoginResponse;
 	myReq.send(null);
 }
-// asdf
+
 function getLoginResponse() {
 	if (myReq.readyState ==4) {
 		if(myReq.status ==	200) {
